@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<body>
+ 
+  <canvas class="background"></canvas>
+  <script src="/particles.js"></script>
+</body>
+
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+	display: flex;
+	background-color: #282828;
+	position: absolute;
+  	display: block;
+  	top: 0;
+  	left: 0;
+ 	 z-index: 0;
+}
+</style>
+
+	<script>
+	window.onload = function() {
+	  	Particles.init({
+	    		selector: '.background'
+		  });
+	};
+
+	var particles = Particles.init({
+	selector: '.background',
+  color: '#91fffb'
+});
+
+
+
+
+	</script>
+
+	</body>
+</html>
