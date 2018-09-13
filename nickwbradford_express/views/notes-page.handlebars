@@ -1,0 +1,14 @@
+{{> header}}
+
+<main>
+  <p>
+    test
+  </p>
+  {{#each notes}}
+    {{> todo}}
+  {{/each}}
+</main>
+
+{{> footer}}
+
+{{> add-note-modal}}
