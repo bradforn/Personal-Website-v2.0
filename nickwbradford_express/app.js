@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 app.get('/about', function (req, res) {
   res.render('about-page', {
     title: 'About Us',
-  
+
   });
 });
 
@@ -34,9 +34,11 @@ app.get('/about', function (req, res) {
 
 // Return a 404 and render the 404 page for any other route.
 app.get('*', function (req, res) {
-  res.status(404).render('404-page', {
-    title: '404'
+  res.render('404-page', {
+     title: 'Page Not Found!',
+     layout: '404'
   });
+
 });
 
 // Listen on the specified port.

@@ -1,0 +1,395 @@
+{
+	"approved" : true,
+	"description" : "[h1]Customizable elements:[/h1] \n[list]\n    [*]Colors(4 zones or color-wave)\n    [*]Characters\n    [*]Font size\n    [*]Speed\n    [*]Trail length\n[/list] \n\n[list]\n    [*]Option to react to music\n[/list]\n\n[h1]Text rendering:[/h1]\n[list]\n    [*]Clock\n    [*]Custom message\n[/list]\n\nBased on this wallpaper: http://steamcommunity.com/sharedfiles/filedetails/?id=858507166\n\nText rendering based on this: https://github.com/PaulBGD/PixelFont",
+	"file" : "index.html",
+	"general" : 
+	{
+		"localization" : 
+		{
+			"de-de" : 
+			{
+				"ui_Clock" : "Uhr einblenden",
+				"ui_Clock12h" : "12 Stunden Zeitformat",
+				"ui_ClockPosX" : "Uhr Position X",
+				"ui_ClockPosY" : "Uhr Position Y",
+				"ui_Clocksize" : "Uhrengröße",
+				"ui_Clocksnap" : "Uhr zentrieren",
+				"ui_Message" : "Nachricht einblenden",
+				"ui_MessagePosX" : "Nachricht Position X",
+				"ui_MessagePosY" : "Nachricht Position Y",
+				"ui_MessageSize" : "Nachrichtentextgröße",
+				"ui_MessageText" : "Nachrichtentext",
+				"ui_Messagesnap" : "Nachricht zentrieren",
+				"ui_PreventLeak" : "Memory Leak unterbinden",
+				"ui_color1" : "Farbe 1",
+				"ui_color2" : "Farbe 2",
+				"ui_color3" : "Farbe 3",
+				"ui_color4" : "Farbe 4",
+				"ui_colorwave" : "Farbwelle",
+				"ui_customcolor" : "Eigene Farben",
+				"ui_extradrops" : "Extra Tropfen",
+				"ui_fontsize" : "Symbolgröße",
+				"ui_label_Message" : "<h4 style='margin-top: 50px'>Nachricht</h4>",
+				"ui_label_Messageandclock" : "<br><small>Die gleichzeitige Darstellung von Nachricht und Uhr ist noch nicht möglich</small>",
+				"ui_label_Music" : "<h4 style='margin-top: 50px'>Musik</h4>",
+				"ui_label_Rain" : "<h4 style='margin-top: 50px'>Regen</h4>",
+				"ui_label_clock" : "<h4 style='margin-top: 50px'>Uhr</h4>",
+				"ui_label_leak" : "<small>Diese Option verhindert, dass das Wallpaper nach einigen Stunden abstürzt, jedoch verbraucht es dadurch mehr Rechenleistung. </small>",
+				"ui_miscellaneous" : "<h4 style='margin-top: 50px'>Sonstiges</h4>",
+				"ui_music" : "Reagiert auf Musik",
+				"ui_musicidle" : "Bei Stille Tropfen erzeugen",
+				"ui_musicidletimeout" : "Wartezeit in Sekunden",
+				"ui_speed" : "Geschwindigkeit",
+				"ui_symbols" : "Symbole",
+				"ui_taillength" : "Spurlänge",
+				"ui_volumemultiplier" : "Musik Empfindlichkeit"
+			},
+			"en-us" : 
+			{
+				"ui_Clock" : "Show clock",
+				"ui_Clock12h" : "12h clock",
+				"ui_ClockPosX" : "Clock position X",
+				"ui_ClockPosY" : "Clock position Y",
+				"ui_Clocksize" : "Clock size",
+				"ui_Clocksnap" : "Center clock",
+				"ui_Message" : "Show message",
+				"ui_MessagePosX" : "Message position X",
+				"ui_MessagePosY" : "Message position Y",
+				"ui_MessageSize" : "Message size",
+				"ui_MessageText" : "Message text",
+				"ui_Messagesnap" : "Center Message",
+				"ui_PreventLeak" : "Prevent memory leak",
+				"ui_color1" : "Color 1",
+				"ui_color2" : "Color 2",
+				"ui_color3" : "Color 3",
+				"ui_color4" : "Color 4",
+				"ui_colorwave" : "Color wave",
+				"ui_customcolor" : "Custom colors",
+				"ui_extradrops" : "Extra drops",
+				"ui_fontsize" : "Font size",
+				"ui_label_Message" : "<h4 style='margin-top: 50px'>Message</h4>",
+				"ui_label_Messageandclock" : "<br><small>Simultaneous rendering of clock and message is not possible yet</small>",
+				"ui_label_Music" : "<h4 style='margin-top: 50px'>Music</h4>",
+				"ui_label_Rain" : "<h4 style='margin-top: 50px'>Rain</h4>",
+				"ui_label_clock" : "<h4 style='margin-top: 50px'>Clock</h4>",
+				"ui_label_leak" : "<small>This option prevents the wallpaper from crashing after several hours, but it will use more CPU-time instead.</small>",
+				"ui_miscellaneous" : "<h4 style='margin-top: 50px'>Miscellaneous</h4>",
+				"ui_music" : "React to music",
+				"ui_musicidle" : "Idle animation when silent",
+				"ui_musicidletimeout" : "Timeout in seconds",
+				"ui_speed" : "Speed",
+				"ui_symbols" : "Symbols",
+				"ui_taillength" : "Trail length",
+				"ui_volumemultiplier" : "Music sensitivity"
+			}
+		},
+		"properties" : 
+		{
+			"Clock12hbool" : 
+			{
+				"condition" : "f3Clockbool.value",
+				"order" : 218,
+				"text" : "ui_Clock12h",
+				"type" : "bool",
+				"value" : false
+			},
+			"ClockSnapbool" : 
+			{
+				"condition" : "f3Clockbool.value",
+				"order" : 215,
+				"text" : "ui_Clocksnap",
+				"type" : "bool",
+				"value" : true
+			},
+			"MessagePosX" : 
+			{
+				"condition" : "Messagebool.value && !f3Clockbool.value  && !MessageSnapbool.value",
+				"editable" : true,
+				"max" : 500,
+				"min" : 0,
+				"order" : 315,
+				"text" : "ui_MessagePosX",
+				"type" : "slider",
+				"value" : 32
+			},
+			"MessagePosY" : 
+			{
+				"condition" : "Messagebool.value && !f3Clockbool.value && !MessageSnapbool.value",
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 316,
+				"text" : "ui_MessagePosY",
+				"type" : "slider",
+				"value" : 30
+			},
+			"MessageSize" : 
+			{
+				"condition" : "Messagebool.value && !f3Clockbool.value",
+				"editable" : false,
+				"max" : 50,
+				"min" : 1,
+				"order" : 313,
+				"text" : "ui_MessageSize",
+				"type" : "slider",
+				"value" : 2
+			},
+			"MessageSnapbool" : 
+			{
+				"condition" : "Messagebool.value && !f3Clockbool.value",
+				"order" : 314,
+				"text" : "ui_Messagesnap",
+				"type" : "bool",
+				"value" : true
+			},
+			"MessageText" : 
+			{
+				"condition" : "Messagebool.value && !f3Clockbool.value",
+				"order" : 312,
+				"text" : "ui_MessageText",
+				"type" : "textinput",
+				"value" : "MATRIX"
+			},
+			"Messagebool" : 
+			{
+				"condition" : "!f3Clockbool.value",
+				"order" : 311,
+				"text" : "ui_Message",
+				"type" : "bool",
+				"value" : false
+			},
+			"Musicidlebool" : 
+			{
+				"condition" : "e6Musicbool.value",
+				"order" : 113,
+				"text" : "ui_musicidle",
+				"type" : "bool",
+				"value" : true
+			},
+			"Musicidletimeout" : 
+			{
+				"condition" : "(e6Musicbool.value && Musicidlebool.value)",
+				"max" : 30,
+				"min" : 1,
+				"order" : 114,
+				"text" : "ui_musicidletimeout",
+				"type" : "slider",
+				"value" : 3
+			},
+			"PreventLeakbool" : 
+			{
+				"order" : 510,
+				"text" : "ui_PreventLeak",
+				"type" : "bool",
+				"value" : true
+			},
+			"e1Symboltext" : 
+			{
+				"order" : 1,
+				"text" : "ui_symbols",
+				"type" : "textinput",
+				"value" : "0123456789ABCDEF"
+			},
+			"e2fontSize" : 
+			{
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 2,
+				"text" : "ui_fontsize",
+				"type" : "slider",
+				"value" : 12
+			},
+			"e3customColorbool" : 
+			{
+				"order" : 3,
+				"text" : "ui_customcolor",
+				"type" : "bool",
+				"value" : false
+			},
+			"e5Colorwavebool" : 
+			{
+				"condition" : "!(e3customColorbool.value || f3Clockbool.value || Messagebool.value)",
+				"order" : 8,
+				"text" : "ui_colorwave",
+				"type" : "bool",
+				"value" : true
+			},
+			"e6Musicbool" : 
+			{
+				"order" : 111,
+				"text" : "ui_music",
+				"type" : "bool",
+				"value" : false
+			},
+			"e7Extradropsbool" : 
+			{
+				"order" : 2,
+				"text" : "ui_extradrops",
+				"type" : "bool",
+				"value" : true
+			},
+			"e8Volumemultiplier" : 
+			{
+				"condition" : "e6Musicbool.value",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 112,
+				"text" : "ui_volumemultiplier",
+				"type" : "slider",
+				"value" : 40
+			},
+			"e9Color1" : 
+			{
+				"condition" : "e3customColorbool.value",
+				"order" : 4,
+				"text" : "ui_color1",
+				"type" : "color",
+				"value" : "1.0 0.0 0.0"
+			},
+			"e9Color2" : 
+			{
+				"condition" : "e3customColorbool.value",
+				"order" : 5,
+				"text" : "ui_color2",
+				"type" : "color",
+				"value" : "0.0 1.0 0.0"
+			},
+			"e9Color3" : 
+			{
+				"condition" : "e3customColorbool.value",
+				"order" : 6,
+				"text" : "ui_color3",
+				"type" : "color",
+				"value" : "0.0 0.0 1.0"
+			},
+			"e9Color4" : 
+			{
+				"condition" : "e3customColorbool.value",
+				"order" : 7,
+				"text" : "ui_color4",
+				"type" : "color",
+				"value" : "1.0 0.0 0.0"
+			},
+			"f1taillength" : 
+			{
+				"editable" : false,
+				"max" : 50,
+				"min" : 1,
+				"order" : 9,
+				"text" : "ui_taillength",
+				"type" : "slider",
+				"value" : 10
+			},
+			"f2speed" : 
+			{
+				"editable" : false,
+				"max" : 99,
+				"min" : 0,
+				"order" : 10,
+				"text" : "ui_speed",
+				"type" : "slider",
+				"value" : 67
+			},
+			"f3Clockbool" : 
+			{
+				"order" : 213,
+				"text" : "ui_Clock",
+				"type" : "bool",
+				"value" : false
+			},
+			"f4Clocksize" : 
+			{
+				"condition" : "f3Clockbool.value",
+				"editable" : false,
+				"max" : 50,
+				"min" : 1,
+				"order" : 214,
+				"text" : "ui_Clocksize",
+				"type" : "slider",
+				"value" : 5
+			},
+			"f5ClockPosX" : 
+			{
+				"condition" : "f3Clockbool.value && !ClockSnapbool.value",
+				"editable" : true,
+				"max" : 500,
+				"min" : 0,
+				"order" : 216,
+				"text" : "ui_ClockPosX",
+				"type" : "slider",
+				"value" : 32
+			},
+			"f6ClockPosY" : 
+			{
+				"condition" : "f3Clockbool.value && !ClockSnapbool.value",
+				"editable" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 217,
+				"text" : "ui_ClockPosY",
+				"type" : "slider",
+				"value" : 30
+			},
+			"label_Leak" : 
+			{
+				"order" : 511,
+				"text" : "ui_label_leak",
+				"type" : "text"
+			},
+			"label_Message" : 
+			{
+				"order" : 309,
+				"text" : "ui_label_Message",
+				"type" : "text"
+			},
+			"label_MessageandClock" : 
+			{
+				"condition" : "f3Clockbool.value",
+				"order" : 310,
+				"text" : "ui_label_Messageandclock",
+				"type" : "text"
+			},
+			"label_Music" : 
+			{
+				"order" : 110,
+				"text" : "ui_label_Music",
+				"type" : "text"
+			},
+			"label_Rain" : 
+			{
+				"order" : 1,
+				"text" : "ui_label_Rain",
+				"type" : "text"
+			},
+			"label_clock" : 
+			{
+				"order" : 210,
+				"text" : "ui_label_clock",
+				"type" : "text"
+			},
+			"label_miscellaneous" : 
+			{
+				"order" : 500,
+				"text" : "ui_miscellaneous",
+				"type" : "text"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.5 0 0.5"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.gif",
+	"tags" : [ "Abstract" ],
+	"title" : "Colorful Matrix",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 1103493745
+}
