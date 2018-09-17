@@ -1,0 +1,19 @@
+#menu-bar{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: #f7a7a0;
+    height: 100%;
+    width: 20%;
+}
+
+
+.info-container {
+  float: right;
+  height: 100%;
+  width: 80%;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: #f7a7a0;
+  background-color: blue;
+  
+}

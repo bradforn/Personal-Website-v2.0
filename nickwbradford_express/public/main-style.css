@@ -4,9 +4,11 @@ html, body {
   display: flex;
   align-items: center;
   background-color: #282828;
+  height: 100%;
+  z-index: -1;
 }
 
-html, body { height: 100% }
+
 
 
 .background {
@@ -14,5 +16,5 @@ html, body { height: 100% }
   display:  block;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -2;
 }
