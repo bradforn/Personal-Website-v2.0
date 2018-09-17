@@ -1,0 +1,58 @@
+#OSU-logo{
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+#CCC-logo{
+  width: 250px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+#DHS-logo{
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+
+#header-space{
+  background-color: grey;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.content-wide {
+
+  display: table;
+  overflow: auto
+  display: inline-block;
+  float:left;
+  position: relative;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: #63ffef;
+  background-color: white;
+  margin: 5%;
+  padding: 30px;
+}
+
+.header-input{
+  text-align: center;
+  margin: 30px;
+  margin-left: 40px;
+  align: center;
+}
+.body-input{
+  float: inherit;
+}

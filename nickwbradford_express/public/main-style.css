@@ -22,9 +22,10 @@ html, body {
 }
 
 .info-container {
+  overflow: scroll;
   right: 5%;
   top: 5%;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   float: right;
   height: 94%;
@@ -32,7 +33,7 @@ html, body {
   border: 1px solid black;
   outline-style: solid;
   outline-color: #63ffef;
-  background-color: blue;
-  opacity: .5;
+  background-color: #282828;
+  opacity: .98;
 
 }
