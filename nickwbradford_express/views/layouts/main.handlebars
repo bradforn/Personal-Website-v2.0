@@ -7,21 +7,17 @@
     <link rel="stylesheet" href="/main-style.css" media="screen">
   </head>
   <body>
+
+    {{> menu-bar}}
+
+      <iframe class="background" src ="http://nickwbradford.com:2415/">
+      </iframe>
     {{{body}}}
+
   </body>
 
 
-  <script>
-  window.onload = function() {
-    Particles.init({
-      selector: '.background'
-    });
-    var particles = Particles.init({
-	     selector: '.background',
-       color: '#41f44a'
-     });
-  };
-  </script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.js"></script>
   <script src="/todo-template.js"></script>

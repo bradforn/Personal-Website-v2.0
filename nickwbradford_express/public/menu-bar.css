@@ -1,19 +1,53 @@
 #menu-bar{
-    border: 1px solid black;
-    outline-style: solid;
-    outline-color: #f7a7a0;
+    position: fixed;
     height: 100%;
-    width: 20%;
+    width: 200px;
+    background-color: #494949;
+    opacity: .95;
 }
 
 
-.info-container {
-  float: right;
-  height: 100%;
-  width: 80%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: #f7a7a0;
-  background-color: blue;
-  
+
+
+#profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 25px;
+  margin-bottom: 0px;
+}
+
+
+
+#welcome-message{
+  font-size: 15px;
+  padding: 25px;
+  padding-top: 0px;
+}
+
+.navbar-list{
+      margin-top: 20px;
+
+}
+
+.navbar-item{
+  width: 200px;
+  background-color: #000000;
+  outline: 1px solid #63ffef;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+  padding: 18px;
+}
+.navbar-item div {
+
+}
+
+.navbar-item a{
+  color: white;
+}
+
+
+#navbar-item-spacer {
+  padding: 5px;
 }
