@@ -22,7 +22,8 @@ html, body {
 }
 
 .info-container {
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   right: 5%;
   top: 5%;
   position: fixed;
